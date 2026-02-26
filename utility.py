@@ -6,6 +6,8 @@ __license__ = "GPL"
 __version__ = "1.0.0"
 
 from datetime import datetime, timedelta
+from functools import reduce
+import operator
 import os
 import sys
 import platform
@@ -13,8 +15,6 @@ import platform
 # ----------------------------------------------------------------------------------------------------------------------
 # ----- DICT UTILS -----
 # With this utils You can dynamically generate a multilevel dictionary
-from functools import reduce
-import operator
 
 
 def getFromDict(dataDict, mapList):
